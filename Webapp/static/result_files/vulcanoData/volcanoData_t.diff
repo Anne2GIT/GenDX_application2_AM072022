@@ -1,0 +1,3 @@
+gene	log2(fold_change)	q_value
+a    3    5
+b    4    6

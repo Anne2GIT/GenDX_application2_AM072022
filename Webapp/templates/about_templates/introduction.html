@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="Introduction template introducing the project and its use."/>
+    <meta name="A.C. van Rijswijk"/>
+
+    <link rel="icon" href="../../static/img/LogoGecko.png">
+    <title>GECKO - Dashboard</title>
+
+    <!-- CSS link -->
+    <link href="../../static/css/styles.css" rel="stylesheet"/>
+
+
+</head>
+
+<!-- Page layout -->
+<body>
+<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+    <a class="navbar-brand">GECKO Dashboard</a>
+    <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Navbar Search-->
+    <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+        <div class="input-group">
+            <input class="form-control" type="text" placeholder="Search for..." aria-label="Search"
+                   aria-describedby="basic-addon2"/>
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </form>
+
+    <!-- Navbar-->
+    <ul class="navbar-nav ml-auto ml-md-0">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="#">Activity Log</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../login/login.html">Logout</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+<div id="layoutSidenav">
+    <div id="layoutSidenav_nav">
+        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+            <div class="sb-sidenav-menu">
+                <div class="nav">
+
+                    <!-- Dashboard -->
+                    <a class="nav-link" href="/">
+                        <div class="sb-nav-link-icon">
+                            <i class="fas fa-tachometer-alt">
+                            </i>
+                        </div>
+                        Dashboard
+                    </a>
+
+                    <!-- Analysis -->
+                    <div class="sb-sidenav-menu-heading">Analysis</div>
+                    <a class="nav-link" href="/charts">
+                        <div class="sb-nav-link-icon">
+                            <i class="fas fa-chart-area"></i>
+                        </div>
+                        Charts
+                    </a>
+
+                    <a class="nav-link" href="/tables">
+                        <div class="sb-nav-link-icon">
+                            <i class="fas fa-table"></i>
+                        </div>
+                        Tables
+                    </a>
+
+                    <a class="nav-link" href="/compare">
+                        <div class="sb-nav-link-icon">
+                            <i class="fas fa-compress-arrows-alt"></i>
+                        </div>
+                        Compare
+                    </a>
+
+
+                    <!-- About -->
+                    <div class="sb-sidenav-menu-heading">About</div>
+
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts"
+                       aria-expanded="false" aria-controls="collapseLayouts">
+                        <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                        Project
+                        <div class="sb-sidenav-collapse-arrow">
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                    </a>
+
+                    <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
+                         data-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+
+                            <a class="nav-link" href="/introduction">
+                                Introduction</a>
+                            <a class="nav-link" href="/people">
+                                People</a>
+                        </nav>
+                    </div>
+
+                    <a class="nav-link" href="/admin_settings">
+                        <div class="sb-nav-link-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        Settings
+                    </a>
+                </div>
+            </div>
+
+            <div class="badge-success">
+                <img src="../static/img/LogoGecko.png" class="mx-auto d-block w-50">
+            </div>
+
+            <div class="sb-sidenav-footer">
+                <div class="small">Logged in as:</div>
+                Elco van Rijswijk
+            </div>
+        </nav>
+    </div>
+
+    <div id="layoutSidenav_content">
+        <main>
+            <div class="container-fluid">
+                <h1 class="mt-4">Introduction</h1>
+                <ol class="breadcrumb mb-4">
+                    <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
+                    <li class="breadcrumb-item active">Introduction</li>
+                </ol>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p class="mb-0">On this page background information about the project and our tool.</p>
+                    </div>
+                </div>
+
+                <!-- Introduction and pictures -->
+                <div class="row">
+
+                    <!-- Introduction -->
+                    <div class="col-md-8">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-book-open"></i>
+                                Introduction
+
+                            </div>
+                            <div class="card-body">
+                                Before the age of 75, 1 in every 3 males and 1 in every 4 females is diagnosed with
+                                cancer. Despite the growing amount of researches into cancer, there is
+                                still little insight into this disease. That is why a project was initiated to deliver a
+                                tool which facilitates the identification and visualisation of differences in gene
+                                expression levels between cancer and non-cancer tissue to aid better understanding of
+                                this increasingly common disease.
+                                <p></p>
+                                Of the total number of ongoing cancer researches, only a small amount focuses on
+                                specific tissues. Tools to identify and visualize differential gene expression levels in
+                                infected tissues already exist, such as GEPIA and GTEx, which show the tissue specific
+                                gene expression and
+                                regulation. However those tools do not include a comparison between expression levels
+                                for gene families in cancer and non-cancer tissue, leaving room for a more specific
+                                approach. The tool that will be created will contain, besides the differential gene
+                                expression levels between cancer and non-cancer tissue for a selected few organ tissues,
+                                the option to analyse these gene expression levels on gene family and subfamily level,
+                                using interactive figures. In this way we try to support ongoing and future cancer
+                                researches.
+                                <p></p>
+                                Due to the large number of past and ongoing researches as described in Margaret I.
+                                Cuomo's book 'A world without cancer', “More than 40 years after the war on cancer was
+                                declared, we have spent billions fighting the good fight. The National Cancer Institute
+                                has spent some $90 billion on research and treatment during that time. Some 260
+                                nonprofit organizations in the United States have dedicated themselves to cancer — more
+                                than the number established for heart disease, AIDS, Alzheimer’s disease, and stroke
+                                combined. Together, these 260 organizations have budgets that top $2.2 billion.”
+                                and thus data being generated, there is a vast amount of data and methods available for
+                                such gene expression analyses. As data source, the GDC Data portal, containing
+                                harmonized cancer datasets, will be used. To illustrate the value of
+                                this tool, the gene families occuring in a specific organ tissue will be selected for
+                                gene expression analysis.
+                                <p></p>
+                                The differential gene expression between cancer and non-cancer tissues are analysed and
+                                visualised using an algorithm and multiple plots. The tool can be used by a biological
+                                researcher for examining tissue specific gene expression on multiple levels, such as age
+                                and gender. The tool can aid in cancer diagnostics and further research for developing
+                                cancer therapies or medicine.
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pictures -->
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-images"></i>
+                                Pictures
+                            </div>
+                            <div class="card-body">
+
+                                <div class="bd-example">
+                                    <div id="Slideshow" class="carousel slide" data-ride="carousel" data-interval="1500">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#Slideshow" data-slide-to="0"
+                                                class="active"></li>
+                                            <li data-target="#Slideshow" data-slide-to="1"></li>
+                                            <li data-target="#Slideshow" data-slide-to="2"></li>
+
+                                        </ol>
+                                        <div class="carousel-inner">
+
+
+                                            <div class="carousel-item active ">
+                                                <img src="../../static/img/LogoGecko.png" class="d-block w-100">
+                                                <div class="carousel-caption d-none d-md-block">
+
+                                                </div>
+                                                <h6 class="text-secondary">GEKCO logo</h6>
+                                            </div>
+
+
+                                            <div class="carousel-item">
+                                                <img src="../../static/img/men.png" class="d-block w-100">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                </div>
+                                                <h6 class="text-secondary">GEKCO logo</h6>
+                                            </div>
+
+
+
+                                            <div class="carousel-item">
+                                                <img src="../../static/img/LogoGecko.png" class="d-block w-100">
+                                                <div class="carousel-caption d-none d-md-block">
+
+                                                </div>
+                                                <h6 class="text-secondary">GEKCO logo</h6>
+                                            </div>
+
+
+                                        </div>
+
+                                        <a class="carousel-control-prev" href="#Slideshow" role="button"
+                                           data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#Slideshow" role="button"
+                                           data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </main>
+        <footer class="py-4 bg-light mt-auto">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center justify-content-between small">
+                    <div class="text-muted">Copyright &copy; GECKO webapp 2020</div>
+                    <div>
+                        <a href="/">Privacy Policy</a>
+                        &middot;
+                        <a href="/">Terms &amp; Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<!-- JS imports -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+<!-- Local JS -->
+<script src="../../static/js/scripts.js"></script>
+</body>
+</html>
